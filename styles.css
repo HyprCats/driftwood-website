@@ -1,0 +1,271 @@
+/* General Styling */
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+/* Nav Styling */
+nav {
+    background-color: #157145;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 500;
+}
+
+.navlogo {
+    width: auto;
+    height: 5rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    margin-bottom: 1.6rem;
+    margin-right: 1rem;
+}
+
+.navbutton {
+    color: #ffffff;
+    list-style-type: none;
+    display: inline;
+    font-family: "neuton", serif;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbutton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.navbutton:active {
+    color: #c2c2c2;
+}
+
+.hamburgericon {
+    width: 3.5rem;
+    height: auto;
+    margin-right: 1.5rem;
+    display: none;
+}
+
+.hamburgericon:hover {
+    cursor: pointer;
+}
+
+/* Hero Styling */
+.herosection {
+    background-image: url(Resources/Hero-Image.jpg);
+    height: 40rem;
+    margin-top: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+h1 {
+    font-family: "aquavit", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    display: inline;
+    margin-left: 2rem;
+}
+
+.highlight {
+    background-color: white;
+}
+
+.herosection h2 {
+    margin-left: 2rem;
+    font-family: "aquavit", sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.herosection img {
+    margin-left: 2rem;
+    height: 5rem;
+    width: auto;
+}
+
+.herosubheading {
+    margin-bottom: 2rem;
+}
+
+.touchicon {
+    display: none;
+}
+
+/* Showcase Section Styling */
+h2 {
+    font-family: "aquavit", sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3 {
+    font-family: "aquavit", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: "neuton", serif;
+    font-size: 1rem;
+}
+
+.showcasesection img {
+    object-fit: cover;
+    height: 18rem;
+    width: 18rem;
+}
+
+.showcasecard {
+    text-align: center;
+}
+
+.cardcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Review Section Styling */
+.firsthalfreviewcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secondhalfreviewcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reviewcontentportion {
+    margin-left: 10px;
+}
+
+.reviewphoto {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.reviewstars {
+    width: 10rem;
+    height: auto;
+    margin-bottom: -0.9rem;
+}
+
+.reviewcard {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.reviewtitle {
+    margin-bottom: 5px;
+}
+
+.reviewdescription {
+    margin-top: 5px;
+}
+
+/* Location Section Styling */
+.locationsection {
+    margin-bottom: 1rem;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #157145;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 0.2rem;
+}
+
+footer p {
+    font-family: "neuton", sans-serif;
+}
+
+.socialmediaicon {
+    width: 2rem;
+    height: auto;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.socialmediaicon:hover {
+    cursor: pointer;
+}
+
+/* Thin Screens */
+@media only screen and (max-width: 700px) {
+    .navbutton {
+        display: none;
+    }
+
+    .hamburgericon {
+        display: block;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .cardcontainer { flex-direction: column; }
+
+    .firsthalfreviewcontainer {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -90px;
+    }
+
+    .secondhalfreviewcontainer {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -90px;
+    }
+
+    iframe {
+        width: 90%;
+    }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  /* Touch UI styles */
+  .touchicon {
+    display: block;
+  }
+
+  .mouseicon {
+    display: none;
+  }
+}
