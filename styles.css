@@ -54,7 +54,7 @@ nav ul {
 }
 
 .hamburgericon {
-    width: 3.5rem;
+    width: 3rem;
     height: auto;
     margin-right: 1.5rem;
     display: none;
@@ -192,6 +192,30 @@ p {
     margin-top: 5px;
 }
 
+/* Team Section Styling */
+.teamcardcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.teamcard {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.teamcard img {
+    height: 25rem;
+}
+
+.teamsection h3 {
+    margin-bottom: -1rem;
+}
+
+h4 {
+    font-family: "neuton", serif;
+}
+
 /* Location Section Styling */
 .locationsection {
     margin-bottom: 1rem;
@@ -245,17 +269,27 @@ footer p {
     .firsthalfreviewcontainer {
         flex-direction: column;
         align-items: center;
-        margin-left: -90px;
+        margin-left: -105px;
     }
 
     .secondhalfreviewcontainer {
         flex-direction: column;
         align-items: center;
-        margin-left: -90px;
+        margin-left: -105px;
+    }
+
+    .teamcardcontainer {
+        flex-direction: column;
+        align-items: center;
     }
 
     iframe {
         width: 90%;
+    }
+
+    h2 {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
